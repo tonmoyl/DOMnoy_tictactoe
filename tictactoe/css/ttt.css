@@ -1,0 +1,63 @@
+html {
+  background-image: url("../pop-art-grunge-style-fruit-poster-collection-retro-fruits-vintage-vector-set-fruits-55066508.jpg");
+  box-shadow: inset 0px 0px 10px black;
+}
+
+figure {
+  width: 666px;
+  margin: auto;
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  width: 669px;
+  padding: 0;
+  border: 6px solid black;
+  box-sizing: border-box;
+  align-self: center;
+
+}
+
+ul li {
+  color: white;
+  background-color: #44adad;
+  display: flex;
+  width: 219px;
+  height: 222px;
+  border: 10px solid black;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-shadow: 2px 5px  #ff0000;
+}
+
+ul li:hover {
+  background: yellow;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 5px #ff0000;
+}
+
+
+congrats {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 5px #ff0000;
+  display: block;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
