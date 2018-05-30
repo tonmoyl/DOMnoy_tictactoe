@@ -361,7 +361,6 @@ class View {
 
   makeMove($square) {
     // this.game.playMove($square.data('pos'));
-debugger
     let pos = $square.htmlElements[0].id.split(",")
     this.game.playMove(pos);
     if (pos) {
@@ -371,11 +370,8 @@ debugger
       $square.append(this.game.currentPlayer);
       // $square.css("background", random_color);
       // $square.css("box-shadow", "inset 0px 0px 10px black");
-      debugger
       $square.setAttribute("background", random_color);
       $square.setAttribute("box-shadow", "inset 0px 0px 10px black");
-
-
     }
 
     if (this.game.board.isOver()) {
