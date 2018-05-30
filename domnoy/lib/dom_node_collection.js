@@ -91,14 +91,11 @@ class DOMNodeCollection {
 
     });
     this.htmlElements = [];
-    console.log(this.htmlElements);
-    // this.outerHTML = "";
   }
 
     setAttribute(styleName, actualstyle) {
       let id = this.htmlElements[0].id;
       let htmlElement = document.getElementById(id);
-      // htmlElement.style.cssText = `${styleName}: ${actualstyle}`;
       htmlElement.style[styleName] = actualstyle;
 
     }

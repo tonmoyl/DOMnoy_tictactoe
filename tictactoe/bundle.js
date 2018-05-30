@@ -301,14 +301,11 @@ module.exports = Game;
 const View = __webpack_require__(/*! ./ttt-view */ "./js/ttt-view.js");
 const Game = __webpack_require__(/*! ./game */ "./js/game.js");
 
-// $( () => {
 document.addEventListener('DOMContentLoaded', ()=>{
-  // Your code here
   const newGame = new Game();
   $view = $l('.ttt');
   const view = new View(newGame, $l('.ttt'));
   view.bindEvents();
-
 
 
 });
