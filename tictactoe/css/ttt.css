@@ -102,7 +102,7 @@ congrats {
   height: 70px;
 }
 
-.linkedin, .github {
+.linkedin, .github, .portfolio {
   background-repeat: no-repeat;
   cursor: pointer;
   border-radius: 10px;
@@ -116,4 +116,25 @@ congrats {
 .github {
   background-color: red;
   background-image: url('../images/links/gh-white.png');
+}
+
+.portfolio {
+  background-color: white;
+  background-image: url('../images/links/profile-icon.png');
+  background-size: 70px;
+  box-shadow: 5px 5px blue;
+}
+
+.audio-controls {
+  display: flex;
+}
+
+.audio {
+  padding: 20px 30px;
+  background-color: purple;
+  color: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px white;
+  cursor: pointer;
 }

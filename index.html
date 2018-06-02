@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<head>
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" type="text/css" href="./tictactoe/css/ttt.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="./domnoy/lib/domnoy.js" charset="utf-8"></script>
-  <script src="./tictactoe/bundle.js"></script>
-</head>
-<body>
-  <h1>Tic Tac Toe</h1>
-  <div class="author">
-    <h2>Made by:</h2>
-    <h3>Lifazul Tonmoy</h3>
-  </div>
-  <figure class="ttt">
-  </figure>
-  <congrats></congrats>
-  <audio loop autoplay>
-    <source src="./beach_music.mp3">
-  </audio>
-  <div class="links-list">
-  <a href="https://www.linkedin.com/in/lifazultonmoy/">
-    <div class="link linkedin">
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="./tictactoe/css/ttt.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./domnoy/lib/domnoy.js" charset="utf-8"></script>
+    <script src="./tictactoe/bundle.js"></script>
+    <link rel="icon" type="image/png" href="./tictactoe/images/links/fav-icon.png"/>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="author">
+      <h2>Made by:</h2>
+      <h3>Lifazul Tonmoy</h3>
     </div>
-  </a>
-  <a href="https://github.com/tonmoyl">
-    <div class="link github">
+    <figure class="ttt">
+    </figure>
+    <congrats></congrats>
+    <audio loop autoplay id="player">
+      <source src="./beach_music.mp3">
+    </audio>
+    <div class="links-list">
+      <a href="https://www.linkedin.com/in/lifazultonmoy/">
+        <div class="link linkedin">
+        </div>
+      </a>
+      <a href="https://github.com/tonmoyl">
+        <div class="link github">
+        </div>
+      </a>
+      <a href="http://lifazul.com/">
+        <div class="link portfolio">
+        </div>
+      </a>
     </div>
-  </a>
-</div>
-</body>
+    <div class="audio-controls">
+      <div onclick="document.getElementById('player').play()" class="audio start">Sound on</div>
+      <div onclick="document.getElementById('player').pause()" class="audio pause">Sound off</div>
+    </div>
+  </body>
 </html>
