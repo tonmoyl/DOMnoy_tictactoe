@@ -31,14 +31,11 @@ class View {
     }
 
     if (this.game.board.isOver()) {
-      // alert("You won!");
       if(!this.game.winner()) {
         $l('congrats').append(`no one has won`);
-
       }
       else {
         $l('congrats').append(`${this.game.currentPlayer} has won!`);
-
       }
     }
   }

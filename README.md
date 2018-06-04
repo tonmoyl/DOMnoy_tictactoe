@@ -21,37 +21,30 @@ $l represents the major function for DOMnoy. The function takes in three types o
 2. string: $l searches through the HTML page to find the elements that matches the string argument. The string uses the same search case as CSS selectors
 3. object: $l checks to see if the object is an instance of HTML so that it can be converted to a DOMNodeCollection for further manipulation
 
-### DOM manipulation
-
-#### html
-
-Takes in an optional argument of a string. The optional argument will replace the inner HTML of the string. If no argument is given, then the function will return the innerHTML of that element.
-
-#### empty
-
-Sets the inner HTML of the selected element to be empty.
-
+### DOMnoy functions
 
 #### append
 
 Takes in an argument and set the inner HTML of that element.
 
-#### attr
+Here is an example of using the append function for tic tac toe:
+```JavaScript
+if (this.game.board.isOver()) {
+  if(!this.game.winner()) {
+    $l('congrats').append(`no one has won`);
+  }
+  else {
+    $l('congrats').append(`${this.game.currentPlayer} has won!`);
+  }
+}
+```
 
-Takes in one argument and an additional optional argument (attrName, value). If there is no setter present, then the function returns the value of the given attribute. If there is the second optional argument, then it sets the attribute with the value.
+#### setAttribute
 
-#### addClass & removeClass
+Takes in two argument to set the attribute values for that element. The first argument is the style name that needs to be modified while the second argument is the actual style.
 
-Takes in an argument and adds/deletes the classes that matches the argument.
-
-#### children
-
-Returns all the children of the HTML element as a DOMNodeCollection for that element
-
-#### parent
-
-Returns the parent of the current element
-
-#### remove
-
-Sets the outerHTML of that element as an empty string
+Here is a code snippet to see it actually work for Tic Tac Toe:
+```JavaScript
+$square.setAttribute("background", random_color);
+$square.setAttribute("box-shadow", "inset 0px 0px 10px black");
+```
