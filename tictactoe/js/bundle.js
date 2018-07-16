@@ -133,11 +133,11 @@ class View {
     if (this.game.board.isOver()) {
       // alert("You won!");
       if(!this.game.winner()) {
-        $('congrats').append(`no one has won`);
+        $('.congrats').append(`no one has won`);
 
       }
       else {
-        $('congrats').append(`${this.game.currentPlayer} has won!`);
+        $('.congrats').append(`${this.game.currentPlayer} has won!`);
 
       }
     }

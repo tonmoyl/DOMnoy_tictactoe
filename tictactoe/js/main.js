@@ -6,6 +6,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
   $view = $l('.ttt');
   const view = new View(newGame, $l('.ttt'));
   view.bindEvents();
-
-
 });

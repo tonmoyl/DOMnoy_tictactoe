@@ -1,7 +1,7 @@
 # DOMnoy
 DOMnoy is a JavaScript DOM manipulation library. You can check out the repo [here](https://github.com/tonmoyl/domnoy_tic_tac_toe)
 
-This library uses Vanilla Javascript for useful methods and functionality. To show that the library is effectively working, view this demo [here](http://lifazul.com/DOMnoy_tictactoe/)
+This library uses Vanilla Javascript for useful methods and functionality. To see tic tac toe being built with this library, see the demo [here](http://lifazul.com/DOMnoy_tictactoe/)
 
 ## Usage
 To use this JavaScript library, you need to do the following procedure:
@@ -31,10 +31,10 @@ Here is an example of using the append function for tic tac toe:
 ```JavaScript
 if (this.game.board.isOver()) {
   if(!this.game.winner()) {
-    $l('congrats').append(`no one has won`);
+    $l('.congrats').append(`no one has won`);
   }
   else {
-    $l('congrats').append(`${this.game.currentPlayer} has won!`);
+    $l('.congrats').append(`${this.game.currentPlayer} has won!`);
   }
 }
 ```
