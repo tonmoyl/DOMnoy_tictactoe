@@ -300,11 +300,24 @@ module.exports = Game;
 
 const View = __webpack_require__(/*! ./ttt-view */ "./js/ttt-view.js");
 const Game = __webpack_require__(/*! ./game */ "./js/game.js");
+const Board = __webpack_require__(/*! ./board */ "./js/board.js")
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  const newGame = new Game();
+  var newGame = new Game();
   $view = $l('.ttt');
-  const view = new View(newGame, $l('.ttt'));
+  var view = new View(newGame, $l('.ttt'));
+  $button = $l('.new-game')
+
+  $button.on('click', () => {
+    $view.empty();
+    $l('.congrats').empty();
+    newGame.board = new Board();
+    newGame.currentPlayer = Board.marks[0];
+
+    var view = new View(newGame, $l('.ttt'));
+
+  })
+
   view.bindEvents();
 });
 
