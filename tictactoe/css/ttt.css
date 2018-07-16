@@ -143,3 +143,20 @@ h3 {
   box-shadow: 5px 5px white;
   cursor: pointer;
 }
+
+.new-game {
+  padding: 20px 30px;
+  background-color: orange;
+  color: white;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.button-container {
+  text-align: center;
+  padding: 20px;
+}
